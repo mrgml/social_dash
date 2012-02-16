@@ -3,8 +3,10 @@ GuessTheFootballer::Application.routes.draw do
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+  #   match '/signup', :to => 'users#new', :as => 'signup'
   # Keep in mind you can assign values other than :controller and :action
+  
+  resources :biographies
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
