@@ -9,4 +9,4 @@ Feature: New User
 		And there should be a text field
 		When I submit the username "footballing_legend"
 		Then a new user should be created with that username
-		Then I should be forwarded to the biography page
+		Then I should be forwarded to the biographies page

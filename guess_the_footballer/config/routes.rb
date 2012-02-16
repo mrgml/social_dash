@@ -9,6 +9,7 @@ GuessTheFootballer::Application.routes.draw do
   match '/', :to => 'users#new', :as => 'signup'
   
   resources :biographies
+  resources :users
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
