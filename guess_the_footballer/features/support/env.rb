@@ -4,7 +4,13 @@
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
 
+ENV["RAILS_ENV"] ||= "test"
+
+# TODO: find a better way to prepare the DB
+system 'rake db:seed'
+
 require 'cucumber/rails'
+
 
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In
 # order to ease the transition to Capybara we set the default here. If you'd

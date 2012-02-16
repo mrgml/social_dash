@@ -5,17 +5,12 @@ module NavigationHelpers
   #
   # step definition in web_steps.rb
   #
-
-    
-  
   def path_to(page_name)
     case page_name
 
-    when /the biography guess page for (.*)/
-      biography_path($1)
-    
     when /^the home\s?page$/
       '/'
+
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

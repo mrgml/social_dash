@@ -4,8 +4,8 @@ Feature: Guessing Biography
   Should be able to try to guess the footballer
 
   Scenario: View
-    Given I go to the biography guess page for "John Barnes"
-    Then I should see the redacted biography for "John Barnes"
+    Given I browse to the biography guess page for "John Barnes"
+    Then I should see his redacted biography
 		And there should be a text field
 		When I input "John Barnes"
 		Then I should see the unredacted biography for "John Barnes"

@@ -1,7 +1,7 @@
 class BiographiesController < ApplicationController
   
   def show
-    @biography = Biography.find_by_name(params[:id])
+    @biography = Biography.find(params[:id])
   end
   
   
