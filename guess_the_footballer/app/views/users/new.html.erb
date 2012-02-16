@@ -1,10 +1,10 @@
 
-<div class="bio">
+<div>
 	<p>
 		<%= form_for User.new do |f| %>
-			<%= f.label :user, "Please enter a username (so we can keep score):"  %><br/>
-			<%= f.text_field :username %><br/>
-			<%= f.submit "Play!" %><br/>
+			<%= f.label :user, "Please enter a username (so we can keep score):"  %><br/><br/>
+			<%= f.text_field :username %><br/><br/>
+			<%= f.submit "Play >>" %><br/><br/>
 		<% end %>
 	</p>
 </div>

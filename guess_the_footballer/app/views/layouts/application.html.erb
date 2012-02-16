@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GuessTheFootballer</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>GuessTheFootballer</title>
+	  <%= stylesheet_link_tag    "application" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="container">
+			<div class="span-24">
+				<br/>
+				<br/>
+				<header>
+					Guess the footballer...
+				</header>
+				<br/>
+				<br/>
+			</div>
+		
+			<div class="span-4">&nbsp; </div> <!-- left spacer, the nbsp is there to force the space -->
+			<div class="span-16">
+		
+		
+		
+			<%= yield %>
+		
+			</div>
 
-<%= yield %>
-
-</body>
+			<div class="span-4 last"/> <!-- right spacer -->
+		
+		</div>
+	</body>
 </html>
