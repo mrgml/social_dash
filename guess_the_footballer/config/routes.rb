@@ -6,6 +6,8 @@ GuessTheFootballer::Application.routes.draw do
   #   match '/signup', :to => 'users#new', :as => 'signup'
   # Keep in mind you can assign values other than :controller and :action
   
+  match '/', :to => 'users#new', :as => 'signup'
+  
   resources :biographies
 
   # Sample of named route:
