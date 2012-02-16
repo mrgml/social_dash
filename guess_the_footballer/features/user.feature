@@ -7,6 +7,6 @@ Feature: New User
     Given I go to the home page
     Then I should be prompted to supply a username
 		And there should be a text field
-		When I input the username "footballing_legend"
+		When I submit the username "footballing_legend"
 		Then a new user should be created with that username
 		Then I should be forwarded to the biography page
