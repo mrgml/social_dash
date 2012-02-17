@@ -1,0 +1,29 @@
+** Guess the footballer
+bio (potentially: "more...")
+text field
+success / fail feedback
+Timer
+Achievement
+
+
+Biography data model:
+required:
+name:string
+full_name:string
+bio:string
+redacted_bio:string
+
+optional:
+teams
+photo
+
+
+User data model:
+username
+biographies guessed
+email
+name
+
+optional:
+team
+points
