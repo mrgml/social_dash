@@ -6,10 +6,10 @@ Feature: Guessing Biography
   Scenario: View
     Given I browse to the biography guess page for "John Barnes"
     Then I should see his redacted biography
-		And there should be a text field
-		When I input "John Barnes"
-		Then I should see the unredacted biography for "John Barnes"
-		And I should see "Well Done!  You got it right!"
+		And I should see a text field
+		When I submit "John Barnes"
+		Then I should see his unredacted biography
+		And I should see "You got it right, well done!"
 		
 		
 		

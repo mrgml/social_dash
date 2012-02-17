@@ -1,2 +1,14 @@
-<div class="bio"><p><%= @biography.redacted_bio %></p></div>
+<div class="bio">
+	<p><%= @biography.bio %></p>
+</div>
 
+<div>
+	<br/>
+	<br/>
+	<br/>
+	<p class="success">
+		<% if notice %>
+			<%= notice %>
+		<% end %>
+	</p>
+</div>

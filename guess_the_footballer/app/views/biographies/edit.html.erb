@@ -1,0 +1,18 @@
+<div class="bio">
+	<p><%= @biography.redacted_bio %></p>
+</div>
+
+<div>
+	<br/>		
+	<p>
+		<%= form_for @biography do |f| %>
+		  <% if notice %>
+				<%= f.label :name, "#{notice}  Who is he?"  %><br/><br/>
+			<% else %>
+				<%= f.label :name, "Who is he?"  %><br/><br/>
+			<% end %>
+			<%= f.text_field :name %><br/><br/>
+			<%= f.submit "Guess >>" %><br/><br/>
+		<% end %>
+	</p>
+</div>

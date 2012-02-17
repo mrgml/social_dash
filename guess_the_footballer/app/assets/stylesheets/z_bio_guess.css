@@ -29,6 +29,15 @@ p {
 	color: #FFF;
 }
 
+.success {
+	color: #8EC740;
+	background-color: #000;
+	margin: 0;
+	border: 0;
+	padding: 0px;
+	text-align: center;
+}
+
 form {
 	text-align: center;
 }
@@ -41,20 +50,22 @@ label {
 input[type=text] {
 	width: 300px;
 	height: 50px;
-	font-size: 150%;
+	font-size: 20px;
 	text-align: center;
 	color: #FF5B00;
 	background-color: #222;
 	border-color: #222;
 	padding: 5px;
 	border-radius: 5px;
+	-webkit-border-radius: 5px;
 	box-shadow: 0px 0px 5px 5px #222;
+	-webkit-box-shadow: 0px 0px 5px 5px #222;
 }
 
 input[type=submit] {
 	width: 100px;
 	height: 50px;
-	font-size: 140%;
+	font-size: 14px;
 	color: #8EC740;
 	background-color: #222;
 	border-color: #111;
